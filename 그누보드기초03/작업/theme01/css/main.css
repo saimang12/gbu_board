@@ -1,0 +1,149 @@
+.inner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    line-height: 100px;
+}
+
+#header .inner {
+    justify-content: space-between;
+}
+
+#gnb>ul {
+    display: flex;
+    gap: 30px;
+}
+
+#mainVisual {
+    position: relative;
+}
+
+#mainVisual .mainSlogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+}
+
+#mainVisual .mainSlogan h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+#mainVisual .mainSlide .itm {
+    height: 600px;
+}
+
+#mainVisual .mainSlide .itm01 {
+    background: url(../img/main_visual01.jpg) no-repeat center center/cover;
+}
+
+#mainVisual .mainSlide .itm02 {
+    background: url(../img/main_visual02.jpg) no-repeat center center/cover;
+}
+
+#mainVisual .mainSlide .itm03 {
+    background: url(../img/main_visual03.jpg) no-repeat center center/cover;
+}
+
+#mainVisual .mainSlide .slick-dots {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#mainVisual .mainSlide .slick-dots>li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+#mainVisual .mainSlide .slick-dots>li button {
+    width: 15px;
+    height: 15px;
+    background: tomato;
+    color: #fff;
+    font-size: 12px;
+    border: none;
+    border-radius: 50%;
+}
+
+#mainVisual .mainSlide .slick-dots>li.slick-active button {
+    background: tan;
+}
+
+.section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.section p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 40px 0;
+}
+
+
+
+#mainContent .inner {
+    gap: 30px;
+}
+
+#mainContent figure {
+    flex: 1;
+}
+
+#mainCustomer {
+    background: #f9f9f9;
+}
+
+#mainCustomer .inner {
+    gap: 30px;
+}
+
+#mainCustomer .inner>div {
+    flex: 1;
+}
+
+#footer {
+    padding: 30px 0 50px 0;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.sub_bar {
+    background: #f7f7f7;
+    line-height: 40px;
+    font-size: 13px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub_bar .inner {
+    justify-content: flex-end;
+}
+
+#article {
+    flex: 3;
+    padding: 50px 50px 50px 0;
+    border-right: 1px solid #ddd;
+    min-height: 500px;
+}
+
+#aside {
+    flex: 1;
+    padding: 50px 0 50px 50px;
+}

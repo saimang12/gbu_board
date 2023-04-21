@@ -1,0 +1,11 @@
+.inner {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin: 100px auto;
+}
+
+.bg {
+    height: 300px;
+    background: url(../img/logo.png);
+}

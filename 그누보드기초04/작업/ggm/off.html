@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <style>
+        button+a {
+            display: none;
+        }
+
+        button.on+a {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="btn">click</button>
+    <a href="/">on</a>
+
+    <script>
+        $('button').on('click', function () {
+            $(this).toggleClass('on')
+        })
+        $(document).on('click', function (e) {
+            //console.log(e.target, $(e.target), $('button'));
+            console.log($(e.target)[0] == $('button')[0]);
+            if ($(e.target)[0] != $('button')[0]) {
+                $('button').removeClass('on')
+            }
+        })
+    </script>
+</body>
+
+</html>
